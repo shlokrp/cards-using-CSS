@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR card</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 100vh;
+            width: 100vw;
+            background: pink;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card{
+            width: 330px;
+            height: 500px;
+            background-color: white;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+            padding: 20px;
+            border: 1px solid black;
+            transition: all 3s linear 1s;
+        }
+        .card:hover{
+            transform:scale(1.3);
+        }
+    
+        img{
+            height: 290px;
+            width: 290px;
+            border-radius: 10px;
+            border: 1px solid black;
+            transition: all 3s linear 1s;
+        }
+        img:hover{
+            transform:scale(1.3);
+        }
+        h2{
+            font-weight: bold;
+            font-size: 1.7rem;
+        }
+        p{
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+
+            <img src="linkedin.png" alt="linkedin">
+            <h2>Scan the QR code for my linkedin!
+            </h2>
+            <p>This is my card project made using css. I have to make many projects to master css.</p>
+
+        </div>
+    </div>
+</body>
+</html>

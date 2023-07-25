@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magzine</title>
+</head>
+<style>
+    *{
+        margin:0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    body{
+        font-family:sans-serif;
+        color: white;
+    }
+    .container{
+        width: 100vw;
+        height: 100vh;
+        background-color: cornflowerblue;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+
+    .card{
+        width: 55%;
+        height: 55%;
+        background-color:rgb(78, 1, 78);
+        display: flex;
+        position: relative;
+        animation: rightmovement 5s alternate linear 0s infinite none;
+        
+    }
+    @keyframes rightmovement{
+        from{ 
+            top: 0px;
+            left:0px;
+        }
+
+        to{
+            top: 0px;
+            left: 670px;
+        }
+    }
+
+    .rightbox{
+        min-width: 50%;
+        height: 100%;
+        background-image: url(icon.jpg);
+        background-size: cover;
+    }
+    .leftbox{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 7%;
+        padding: 6%;
+    }
+    #desc{
+        font-size: 0.8rem;
+    }
+    .numberdiv{
+        display: flex;
+        justify-content: space-between;
+        gap: 4%;
+    }
+    .twoline{
+        display: flex;
+        flex-direction: column;
+    }
+    .small{
+        font-size: 0.8rem;
+    }
+    .large{
+        font-weight: bold;
+        font-size: 1.8rem;
+    }
+
+
+</style>
+<body>
+<div class="container">
+    <div class="card">
+        <div class="leftbox">
+            <h1>Get insights that help your business grow!</h1>
+            <p id="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quae id provident placeat quasi illo reprehe nderit omns eliendi, a sapite perspiciatis, quo min laudantium.</p>
+            <div class="numberdiv">
+                <div class="twoline">
+                    <p class="large">10K+</p>
+                    <p class="small">Comments</p>
+                </div>
+
+                <div class="twoline">
+                    <p class="large">214</p>
+                    <p class="small">Paid users</p>
+                </div>
+
+                <div class="twoline">
+                    <p class="large">12M+</p>
+                    <p class="small">Views</p>
+
+                </div>
+
+
+            
+            </div>
+
+        </div>
+
+        <div class="rightbox">
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
